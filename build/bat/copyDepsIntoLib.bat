@@ -1,0 +1,1 @@
+7z.exe a ..\Android-ARM\libAppMetrica.jar ..\deps\com

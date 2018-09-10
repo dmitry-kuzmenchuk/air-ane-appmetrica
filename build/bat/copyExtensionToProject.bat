@@ -1,0 +1,1 @@
+::copy ..\out\com.menu4me.ane.AppMetrica.ane "..\..\test\ane\Location.ane"

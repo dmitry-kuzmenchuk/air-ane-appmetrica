@@ -1,0 +1,15 @@
+<project name="AppMetrica" default="build">
+	<property environment="env" />
+	<fail unless="env.FLEX_HOME" message="FLEX_HOME needs to be defined as an environment variable or in the Ant build." />
+	<property name="FLEX_HOME" location="C:/flex_4_16_air_24" />
+	<property name="OUTPUT" location="lib/AppMetrica.swc"/>
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar"/>
+	<target name="build">
+		<mkdir dir="lib" />
+		<compc output="${OUTPUT}" swf-version="14">
+			<load-config filename="${FLEX_HOME}/frameworks/air-config.xml" />
+			<sp path-element="src" />
+			<include-sources dir="src" includes="*"  />
+		</compc>
+	</target>
+</project>

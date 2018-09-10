@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+	<id>com.menu4me.ane.AppMetrica</id>
+	<versionNumber>1.0.0</versionNumber>
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libAppMetrica.jar</nativeLibrary>
+				<initializer>com.menu4me.ane.appmetrica.Extension</initializer>
+				<finalizer>com.menu4me.ane.appmetrica.Extension</finalizer>
+			</applicationDeployment>
+		</platform>
+	</platforms>
+</extension>
